@@ -81,7 +81,28 @@ switch (command) {
 case 'bot':
 client.sendMessage(from, 'Hola,felicidades, has logrado enviar un mensaje mediante un servidor externo😚', text, {quoted : sam})
 break
-                
+case 'foto':
+const imagen = fs.readFileSync('./mediabotk/Matybotkuaker.js')
+client.sendMessage(from, imagen, MessageType.image)
+break 
+case 'video':
+const video = fs.readFileSync('./mediabotk/video.mp4')
+client.sendMessage(from, video, MessageType.video)
+break 
+case 'audio':
+const audio = fs.readFileSync('./mediabotk/audio.mp3')
+client.sendMessage(from, audio, MessageType.audio)
+break 
+ptt: true
+sendEphemeral: true
+contextInfo: {"forwardingScore": 999, "isForwarded": true}
+{quoted: { key: {
+fromMe: false,
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
+},
+message: {
+"documentMessage": { "title": "texto", 'jpegThumbnail': fs.readFileSync('dirección')}}
+}}                
 }
 
 } catch (e) {
