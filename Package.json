@@ -1,0 +1,12 @@
+{
+  "name": "Matybotkuaker",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Matybotkuaker.js",
+  "scripts": {
+  "start": "npm install"
+  },
+  "dependencies": {
+    "@adiwajshing/baileys": "^3.4.1"
+  }
+}
