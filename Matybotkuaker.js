@@ -93,17 +93,7 @@ case 'audio':
 const audio = fs.readFileSync('./mediabotk/audio.mp3')
 client.sendMessage(from, audio, MessageType.audio)
 break 
-ptt: true
-sendEphemeral: true
-contextInfo: {"forwardingScore": 999, "isForwarded": true}
-{quoted: { key: {
-fromMe: false,
-participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {})
-},
-message: {
-"documentMessage": { "title": "texto", 'jpegThumbnail': fs.readFileSync('dirección')}}
-}}                
-}
+
 
 } catch (e) {
         
